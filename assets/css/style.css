@@ -1,0 +1,409 @@
+/* CSS Document */
+body {
+	background-color:#FFF !important;
+	font-family:Verdana, Geneva, sans-serif;
+
+}
+.container {
+	margin: 0px auto;
+}
+.navbar-default {
+  background-color:#4CCFC1 !important;
+  border-bottom: 3px solid #FFF !important;
+  font-family:Arial, Helvetica, sans-serif;
+  padding:0px 10px;
+}
+.navbar-default .navbar-brand {
+  color: #fff !important;
+  padding:10px;
+  font:Arial, Helvetica, sans-serif;
+  font-size:2em;
+}
+.glyphicon-cutlery {
+  left: -9px;
+  top: 7px;
+  
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fff!important;
+  font-size:20px;
+  
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #FFF !important;
+  background-color:#4CCFC1 !important;
+}
+a.navbar-brand span {
+  color: #fff;
+}
+.navbar-default .navbar-toggle {
+  border-color: #fff !important;
+  background-color:#fff;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #fff !important;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color:#FFF !important;
+}
+
+.dropdown-menu {
+    background-color: #4CCFC1 !important;
+  }
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #4CCFC1 !important;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #fff !important;
+    white-space: nowrap;
+}
+  
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #4CCFC1;
+}
+
+.kotak {
+	background-color: #4CCFC1;
+	padding:10px;
+	height:210px;
+	border-radius:10px; 
+	color:black;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+.kotak h2 {
+	padding: 10px;
+	border-radius: 5px;
+	color:#fff;
+	margin:0px;
+	text-align:center;
+}
+.kotak p {
+	color:#fff;
+	text-align:justify;
+	margin-top:5px;
+}
+
+.main1{
+  width: 30%;
+  background-color:#4CCFC1;
+}
+.main1 h2{
+  font-size: 2em;
+  color:#ffffff;
+  text-shadow: 0 1px 0 rgb(24, 141, 118);
+  padding: 5px;
+}
+
+.isimenu {
+  padding:10px;
+  margin-top:10px;
+}
+.thumbnail {
+  background-color:#fff !important; 
+  height:390px;
+  position: relative;
+  z-index: 0;
+}
+.thumbnail > img {
+  height:200px !important;
+}
+.thumbnail .caption {
+  padding: 12px;
+  color: #4CCFC1!important;
+}
+.caption p{
+  color:#000;
+}
+
+.thumbnail:hover{
+background-color: transparent;
+z-index: 50;
+}
+
+.thumbnail span{ /*CSS for enlarged image*/
+position: absolute;
+background-color: #fff;
+padding: 5px;
+left: -1000px;
+border: none;
+visibility: hidden;
+color: black;
+text-decoration: none;
+}
+
+.thumbnail span img{ /*CSS for enlarged image*/
+border-width: 0;
+padding: 2px;
+height: 250px;
+}
+
+.thumbnail:hover span{ /*CSS for enlarged image on hover*/
+visibility: visible;
+top: 0;
+left: 10px; /*position where enlarged image should offset horizontally */
+
+}
+
+
+
+/*footer*/
+footer{
+  color: #fff;
+  width:100%;
+  bottom:0; 
+  background:#4CCFC1; 
+  }
+.isifooter {
+  padding:5px;
+  margin-top:0px;
+}
+.isifooter h2{
+  color:#FFF;
+  padding:10px;
+  margin-top:0px;
+}
+.isifooter img {
+  margin:10px;
+}
+.isifooter p {
+  padding:5px;
+}
+.clear {
+  clear:both
+}
+
+.copyright{
+  color: #4CCFC1;
+  width:100%;
+  margin-bottom:0px; 
+  background:#fff;
+}
+
+.copyright p{
+  padding-top:5px; 
+  text-align: center;
+  font-size: 13px; 
+}
+
+
+
+/*----------------START RESPONSIVE DESIGN------------*/
+
+@media (max-width:1280px){
+
+  .carousel-caption {
+    color: #fff; 
+    bottom: 80px !important;
+}
+
+.carousel-caption h3 {
+    font-size: 28px;
+}
+
+.carousel-caption p {
+    font-size: 20px;
+}
+
+.kotak {
+  height:185px;
+  border-radius:40px;  
+}
+.kotak h2 {
+  padding: 5px;
+  font-size: 26px;
+}
+.thumbnail:hover span{ /*CSS for enlarged image on hover*/
+visibility: visible;
+top: 0;
+left: 10px; /*position where enlarged image should offset horizontally */
+width: 70%;
+
+}
+
+.main1{
+  width: 60%;
+}
+.main1 h2{
+  font-size: 26px;
+}
+
+
+}
+
+@media (max-width:768px){
+
+.carousel-caption {
+    color: #fff; 
+    bottom: 80px !important;
+}
+
+.carousel-caption h3 {
+    font-size: 24px;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+}
+
+.kotak {
+  height:185px;
+  border-radius:60px;  
+}
+.kotak h2 {
+  padding: 5px;
+  font-size: 24px;
+}
+.thumbnail:hover span{ /*CSS for enlarged image on hover*/
+visibility: visible;
+top: 0;
+left: 10px; /*position where enlarged image should offset horizontally */
+width: 70%;
+
+}
+
+.main1{
+  width: 60%;
+}
+.main1 h2{
+  font-size: 24px;
+}
+
+}
+@media (max-width:640px){
+.carousel-caption {
+    color: #fff; 
+    bottom: 60px !important;
+}
+
+.carousel-caption h3 {
+    font-size: 22px;
+}
+
+.carousel-caption p {
+    font-size: 16px;
+}
+
+.kotak {
+  height:185px;
+  border-radius:60px;  
+}
+.kotak h2 {
+  padding: 5px;
+  font-size: 22px;
+}
+.thumbnail:hover span{ /*CSS for enlarged image on hover*/
+visibility: visible;
+top: 0;
+left: 10px; /*position where enlarged image should offset horizontally */
+width: 70%;
+
+}
+
+.main1{
+  width: 60%;
+}
+.main1 h2{
+  font-size: 22px;
+}
+
+ }
+
+@media (max-width:480px){
+.carousel-caption {
+    color: #fff; 
+    bottom: 15px !important;
+}
+.carousel-caption h3 {
+    font-size: 16px;
+}
+
+.carousel-caption p {
+    font-size: 14px;
+}
+
+.kotak {
+  height:200px;
+  border-radius:40px;  
+}
+.kotak h2 {
+  padding: 10px;
+  font-size: 22px;
+}
+
+.thumbnail:hover span{ /*CSS for enlarged image on hover*/
+visibility: visible;
+top: 0;
+left: 12px; /*position where enlarged image should offset horizontally */
+width: 70%;
+
+}
+
+.main1{
+  width: 60%;
+}
+.main1 h2{
+  font-size: 22px;
+}
+
+ }
+
+@media (max-width:320px){
+
+.carousel-caption {
+    color: #fff; 
+    bottom: 8px !important;
+}
+
+.carousel-caption h3 {
+    font-size: 14px;
+}
+
+.carousel-caption p {
+    font-size: 12px;
+}
+
+.kotak {
+  height:180px;
+  border-radius:50px;  
+}
+.kotak h2 {
+  padding: 5px;
+  font-size: 18px;
+}
+
+.thumbnail:hover span{ /*CSS for enlarged image on hover*/
+visibility: visible;
+top: 0;
+left: 3px; /*position where enlarged image should offset horizontally */
+
+}
+
+.main1{
+  width: 60%;
+}
+.main1 h2{
+  font-size: 18px;
+}
+  
+}
+
+
+
+/*----------------END RESPONSIVE DESIGN------------*/
+
